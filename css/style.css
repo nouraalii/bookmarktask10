@@ -1,0 +1,82 @@
+body{
+    background-color: #f7ecde;
+    font-family: "Righteous", sans-serif;
+}
+
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    color: #352e28;
+}
+
+
+.bookform{
+    border-top: 2px dotted #352e28;
+    border-bottom: 2px dotted #352e28;
+}
+
+
+.bookform h2{
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control:focus{
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #fec26055;
+}
+
+.btn-color{
+    background-color: #d1512d;
+    color: white;
+}
+
+
+.btn-visit{
+    background-color: #9eb23b;
+    color: white;
+}
+
+.btn-delete{
+    background-color: #eb1d36;
+    color: white;
+}
+
+/* ------------------------pseudo elemnts------------------------- */
+
+h1::before{
+    content: '';
+    border:hidden;
+    background-color: #fec260;
+    width: 16rem;
+    height: 30%;
+    position: absolute;
+    bottom: 5%;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+
+h1:hover::before{
+    height: 65%;
+
+}
+
+.btn-color:hover {
+    color:white ;
+    background-color:#b63815 ;
+    border-color: #b63815;
+}
+
+.btn-visit:hover{
+    color: white;
+    background-color: #90a525;
+    border-color: #90a525;
+}
+
+.btn-delete:hover{
+    color: white;
+    background-color: #bb0c20;
+    border-color: #bb0c20;
+}
